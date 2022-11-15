@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: rgb(21, 20, 20);
+}
+.container form{
+    display: none;
+}
+input:checked ~ form{
+    display: block;
+}
+.container .text{
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+}
+.container .post{
+    display: none;
+}
+.container{
+    width:400px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+ .star-widget input{
+    display: none;
+    
+}
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all .1s ease;
+}
+.star-widget input:not(checked)~label:hover,
+.star-widget input:not(checked)~label:hover~label{
+    color: #fd4; 
+}
+.star-widget input:checked~label{
+    color: #fe7;
+
+}
+input#rate-5:checked~label{
+    
+    text-shadow: 0 0 20px rgb(208, 120, 53);
+}
+#rate-5:checked~form header:before{
+    content: "I loved it 😍";
+    
+
+
+}
+#rate-4:checked~form header:before{
+    
+    content: "It' Great ❤️";
+
+}
+#rate-3:checked~form header:before{
+    content: "It's Nice 👍";
+
+
+
+}
+#rate-2:checked~form header:before{
+    content: "I don't like it😒";
+
+
+}
+#rate-1:checked~form header:before{
+    content: "I hate it 😢";
+ 
+}
+form header{
+    color: #fe7;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 80px 0 20px 0;
+    text-align: center;
+    transition:all .2s ease;
+}
+.textarea{
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+    
+    
+
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    background-color: #222;
+    padding: 10px;
+    border: 1px solid #333;
+    outline: none;
+    color: #eee;
+    resize: none;
+}
+.btn{
+    margin: 15px;
+   /* border: #eee; */
+    /* width: 100px; */
+    height: 50px;
+    width: 99%;
+
+}
+button{
+    color: #999;
+    font-weight: 600;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #333;
+    /* outline: none; */
+    background-color: #222;
+    transition: .2s;
+
+}
+button:hover{
+    background-color: #1b1b1b;
+}
+

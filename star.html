@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star</title>
+    <link rel="stylesheet" href="star.css" >
+    <script src="https://kit.fontawesome.com/c35e642231.js" crossorigin="anonymous"></script>
+    <!-- <script src="fireConfig1.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="text">Thanks for rating us🙏</div>
+            
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <header></header>
+                <div class="textarea" >
+                    <textarea id="text45" cols="30" placeholder="Describe your experience..."></textarea>
+                </div>
+                <div class="btn">
+                    <button id="submit">POST</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="star.js"></script>
+        <!-- <script>
+                const allstar=document.querySelectorAll(".star-widget input");
+                let text=document.querySelector(".textarea textarea");
+                let btn=document.querySelector(".btn");
+                // console.log(allstar);
+                allstar.forEach((star,i)=>{
+                let currentlevel= (allstar.length) - i ;
+                star.onclick=function(){
+                    console.log(star);
+                    
+
+                    // console.log(i+1);
+                    console.log(currentlevel);
+
+                }
+                btn.onclick=function(){
+                    let text1=text.value;
+                    console.log(text1);
+                }
+                  
+
+              })
+        </script> -->
+</body>
+</html> 
